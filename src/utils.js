@@ -28,6 +28,17 @@ function convertTags(str) {
   return unescape(str).replace(/</g, "&lt;").replace(/>/g, "gt;").trim();
 }
 
+const shuffleArray = function(arr) {
+  const clone = [...arr];
+  const shuffled = [];
+  while (clone.length) {
+    const random = Math.floor(Math.random() * clone.length);
+    let removed = clone.splice(random, 1).shift();
+    shuffled.push(removed);
+  }
+  return shuffled;
+}
+
 // input.addEventListener('keyup', (e) => {
 //   if (isTag(e.target.value)) {
 //     e.target.value = '';
