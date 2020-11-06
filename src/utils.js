@@ -8,6 +8,10 @@ const createElement = function(tag, className) {
   return element;
 }
 
+const getArrayOfNumbers = (max) => {
+  return [...Array(max).keys()];
+}
+
 const delay = (t) => new Promise(resolve => setTimeout(resolve, t));
 
 const randomNum = (max) => Math.floor(Math.random() * Math.floor(max));
