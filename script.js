@@ -3,7 +3,7 @@ import {
   createElement,
   getElement,
   getAllElements
-} from './src/helpers.js';
+} from './src/utils.js';
 
 const ella = new Human({name:'Ella', age:'9 months', arms:2, legs:2});
 ella.move({direction:'forward'});
