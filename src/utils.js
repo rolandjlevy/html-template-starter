@@ -1,5 +1,6 @@
 
 const $ = selector => document.querySelector(selector);
+
 const $$ = selector => document.querySelectorAll(selector);
 
 const createElement = function(tag, className) {
@@ -16,17 +17,9 @@ const delay = (t) => new Promise(resolve => setTimeout(resolve, t));
 
 const randomNum = (max) => Math.floor(Math.random() * Math.floor(max));
 
-const getElement = function(selector) {
-  return document.querySelector(selector);
-}
+const shuffle = (a) => a.sort(() => Math.random() - 0.5);
 
-const getAllElements = function(selector) {
-  return document.querySelectorAll(selector);
-}
-
-function isTag(str) {
-  return /<[^>]*>/g.test(str);
-}
+const isTag = (str) => /<[^>]*>/g.test(str);
 
 function convertTags(str) {
   return unescape(str).replace(/</g, "&lt;").replace(/>/g, "gt;").trim();
@@ -59,8 +52,8 @@ const shuffleArray = function(arr) {
 
 export {
   createElement,
-  getElement,
-  getAllElements,
+  $,
+  $$,
   isTag,
   convertTags
 };

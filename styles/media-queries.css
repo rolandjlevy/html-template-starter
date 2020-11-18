@@ -1,0 +1,17 @@
+@media screen and (max-width: 640px) {
+  :root {
+    transition: all 0.2s ease;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  :root {
+    transition: all 0.2s ease;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  :root {
+    transition: all 0.2s ease;
+  }
+}
