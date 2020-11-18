@@ -17,6 +17,7 @@ html {
   scroll-behavior: smooth;
   scrollbar-color: darkblue blue !important;
   scrollbar-width: var(--scrollbar-size) !important;
+  user-select: none;
 }
 
 body {
