@@ -5,6 +5,14 @@
   --version: 1.1;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 * {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   border: 1px solid #eee;
@@ -161,4 +169,21 @@ footer a:hover {
   background: #ccc;
   padding: 20px;
   font-size: 1rem;
+}
+
+/******************/
+/* Placeholder */
+/******************/
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: grey;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: grey;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: grey;
 }
