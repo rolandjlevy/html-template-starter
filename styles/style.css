@@ -5,10 +5,6 @@
   --version: 1.1;
 }
 
-html {
-  box-sizing: border-box;
-}
-
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -21,12 +17,16 @@ html {
 }
 
 html {
+  box-sizing: border-box;
   touch-action: manipulation;
   scroll-behavior: smooth;
   scrollbar-color: darkblue blue !important;
   scrollbar-width: var(--scrollbar-size) !important;
   user-select: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
 
 body {
   margin: 50px;
