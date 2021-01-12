@@ -187,3 +187,22 @@ footer a:hover {
 ::-ms-input-placeholder { /* Microsoft Edge */
   color: grey;
 }
+
+/**************/
+/* Animations */
+/**************/
+
+.fade-in {
+  animation: fadeInAnimation ease-in 1.5s;
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards; 
+}
+
+@keyframes fadeInAnimation { 
+  0% { 
+    opacity: 0; 
+  } 
+  100% { 
+    opacity: 1; 
+  } 
+} 
