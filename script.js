@@ -2,6 +2,8 @@ import { Human } from './src/Human.js';
 import { Event } from './src/Event.js';
 import { CssVars } from './src/CssVars.js';
 
+const thisYear = (new Date()).getFullYear();
+
 // get and set CSS vars
 const css = new CssVars();
 let version;
